@@ -1,8 +1,7 @@
 <?php
-if(isset($_GET)){
-var_dump($_GET);
-foreach($_GET as $Value);
-}
+// if(isset($_GET)){
+// var_dump($_GET);
+// }
 
 ?>
 <!DOCTYPE html>
