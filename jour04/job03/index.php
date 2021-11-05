@@ -1,7 +1,7 @@
 <?php
-if(isset($_POST)){
-var_dump($_POST);
-}
+// if(isset($_POST)){
+// var_dump($_POST);
+// }
 $i=0;
 foreach($_POST as $value){
     if($value!=""){
