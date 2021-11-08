@@ -25,6 +25,4 @@ function leetspeak($str){
     }
     return $str;
 }
-$leet = "AllezLOM";
-echo leetspeak($leet);
 ?>
