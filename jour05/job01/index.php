@@ -1,7 +1,6 @@
 <?php
-function Hello ($text){
+function Hello ($text="Hello LaPlateforme!"){
     echo $text;
 }
-$str="Hello LaPlateforme!";
-Hello($str);
+Hello();
 ?>
