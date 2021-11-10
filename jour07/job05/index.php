@@ -3,10 +3,6 @@ session_start();
 if(!isset($_SESSION['joueur'])){
         $_SESSION['joueur']=true;
 }
-
-if(!isset($_SESSION['hc'])){
-    $_SESSION['hc']="";
-}
 if(!isset($_SESSION['hd'])){
     $_SESSION['hd']="";
 }
@@ -76,14 +72,13 @@ function clique($case){
             </td>
             <td>
             <?php
-              echo $_SESSION['hc'];
-            if(!isset($_GET['hc'])){
-                
+            if(!isset($_SESSION['hc'])){
+                $_SESSION['hc']="";
                 echo' <form action="#" method="get">
                 <input type="submit" value="-" name="hc">
             </form>';
             }
-               if(isset($_GET['hc'])&& $_SESSION['hc']!= "X" && $_SESSION['hg']!= "O"){
+               if(isset($_GET['hc'])&& $_SESSION['hc']!= "X" && $_SESSION['hc']!= "O"){
   
                $_SESSION['hc']= clique($_GET['hc']);
                echo $_SESSION['hc'];
