@@ -25,8 +25,7 @@ if(!isset($_SESSION['bd'])){
     $_SESSION['bd']="";
 }
 function clique($case){
-    $affiche="";
-    
+
     if (isset($case) && $_SESSION['joueur']==true){
         $affiche='X';
         $_SESSION['joueur']=false;
