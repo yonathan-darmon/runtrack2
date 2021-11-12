@@ -19,7 +19,9 @@ $table= mysqli_fetch_all($req,MYSQLI_ASSOC);
     foreach ($table[0] as $key =>$value) {
         echo " <th>$key</th>";
     }
+    echo "</tr>";
     echo "</thead>";
+    echo "</tbody>";
 
     foreach ($table as $key=>$value){
         echo"<tr>";
