@@ -1,6 +1,6 @@
 <?php
 $connect= mysqli_connect("localhost","root","","jour08");
-$req= mysqli_query($connect, "SELECT * FROM `salles`ORDER BY capacite DESC");
+$req= mysqli_query($connect, "SELECT * FROM salles ORDER BY capacite ASC");
 $table = mysqli_fetch_all($req,MYSQLI_ASSOC);
 ?>
 <!doctype html>
