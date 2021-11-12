@@ -1,7 +1,6 @@
-
 <?php
 $connect= mysqli_connect("localhost","root","","jour08");
-$req= mysqli_query($connect, "SELECT prenom, nom, naissance FROM etudiants WHERE sexe = 'Femme'");
+$req= mysqli_query($connect, "SELECT * FROM `etudiants` WHERE prenom LIKE 'T%'");
 $table= mysqli_fetch_all($req,MYSQLI_ASSOC);
 ?>
 <!doctype html>
