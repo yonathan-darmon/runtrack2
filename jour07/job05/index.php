@@ -2,6 +2,7 @@
 session_start();
 if(isset($_GET['reset'])){
     unset($_SESSION['plateau']);
+    unset($_SESSION['tour']);
 }
 if (!isset($_SESSION['plateau'])) {
     $_SESSION ['plateau'] = [
@@ -38,7 +39,6 @@ if (!isset($_SESSION['tour'])){
                     $_SESSION['plateau'][0][0] = 1;
                     echo 'X';
                     $_SESSION['tour'] = false;
-                    var_dump($_SESSION['tour']);
                 }
 
                 elseif (isset($_GET['hg'])&& $_SESSION['tour']===false && $_SESSION['plateau'][0][0]==0) {
