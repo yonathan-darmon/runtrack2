@@ -13,7 +13,14 @@
     <input type="submit" value="entrer">
 </form>
 <?php
-
+for ($i=0;$i<=$_GET['hauteur']-1;$i++){
+    $j=$_GET['hauteur'];
+    while ($j<=$_GET['hauteur'] && $j>=0){
+        echo
+        $j--;
+    }
+    echo'/'.'<br/>';
+}
 for($j=0;$j<=$_GET['hauteur']-1; $j++) {
     echo '|';
     for ($i=0;$i<=$_GET['largeur']-1;$i++){
