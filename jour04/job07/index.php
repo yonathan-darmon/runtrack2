@@ -7,15 +7,31 @@
     <title>Document</title>
 </head>
 <body>
-    <form action="#" method="get">
-        <input type="number" name="largeur">
-        <input type="number" name="hauteur">
-    </form>
-    il faut que chaque numero corresponde à la hauteur et la largeur de la maison
-    <?php
-    foreach($_GET['largeur'] as $valuel );
-    foreach($_GET['hauteur'] as $valueh);
-    for()
-    ?>
+<form action="#" method="get">
+    <input type="number" name="largeur" > <p>Largeur</p>
+    <input type="number" name="hauteur" > <p>hauteur</p>
+    <input type="submit" value="entrer">
+</form>
+<?php
+
+for($j=0;$j<=$_GET['hauteur']-1; $j++) {
+    echo '|';
+    for ($i=0;$i<=$_GET['largeur']-1;$i++){
+        if($j==$_GET['hauteur']-1){
+        echo '_';
+    }
+    }
+    for ($k=0;$k<$_GET['largeur']*2;$k++){
+        if ($j<$_GET['hauteur']-1){
+
+        echo '&nbsp';
+    }
+    }
+    echo '|' . '<br/>';
+
+}
+
+
+?>
 </body>
 </html>
